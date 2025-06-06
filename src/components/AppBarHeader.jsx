@@ -60,7 +60,7 @@ const AppBarHeader = () => (
           opacity: 0.95,
         }}
       >
-          تصفح الآن و جد شريكة حياتك 
+          تصفح الآن و جد شريكة حياتك 1
       </Typography>
     </Toolbar>
   </AppBar>
