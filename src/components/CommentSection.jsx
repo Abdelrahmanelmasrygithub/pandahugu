@@ -80,7 +80,7 @@ const CommentSection = () => {
 
       <form onSubmit={handleSubmit}>
         <TextField
-          label="التعليق *"
+          label="الرساله *"
           name="text"
           value={form.text}
           onChange={handleChange}
