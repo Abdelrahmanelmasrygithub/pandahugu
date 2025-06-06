@@ -53,7 +53,7 @@ const CommentSection = () => {
 
   return (
     <Box sx={{ maxWidth: 600, mx: 'auto', p: 2 }}>
-      <Typography variant="h6" sx={{ mb: 2 }}>جميع التعليقات:</Typography>
+      <Typography variant="h6" sx={{ mb: 2 }}>محادثتك:</Typography>
       {comments.map((comment) => (
         <Card key={comment.id} sx={{ my: 2, background: comment.approved ? '#f0fff0' : '#fffbe0' }}>
           <CardContent>
@@ -61,7 +61,7 @@ const CommentSection = () => {
             <Typography variant="body2" sx={{ mt: 1 }}>{comment.text}</Typography>
             {!comment.approved && (
               <Button size="small" onClick={() => approveComment(comment.id)} sx={{ mt: 1 }}>
-                الموافقة على التعليق
+                ارسال
               </Button>
             )}
             {comment.approved && (
@@ -73,7 +73,7 @@ const CommentSection = () => {
 
       <Divider sx={{ my: 4 }} />
 
-      <Typography variant="h6">اترك تعليقاً</Typography>
+      <Typography variant="h6">اترك رساله</Typography>
       <Typography variant="body2" sx={{ mb: 2 }}>
         لن يتم نشر عنوان بريدك الإلكتروني. الحقول الإلزامية مشار إليها بـ *
       </Typography>
@@ -100,7 +100,7 @@ const CommentSection = () => {
         />
 
         <Button type="submit" variant="contained" color="primary" fullWidth>
-          إرسال التعليق
+          إرسال 
         </Button>
       </form>
     </Box>
