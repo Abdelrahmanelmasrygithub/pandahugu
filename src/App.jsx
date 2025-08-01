@@ -10,7 +10,7 @@ import CardDetails from './components/CardDetails';
 import AppBarHeader from './components/AppBarHeader';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop'; // ✅ تأكد من المسار الصحيح
-
+import SignUpForm from './components/signup';
 function App() {
   return (
     <Router>
@@ -18,7 +18,8 @@ function App() {
       <AppBarHeader />
 
       <Routes>
-        <Route path="/" element={<LandingPage />} />
+        <Route path="/" element={<SignUpForm />} />            
+        <Route path="/home" element={<LandingPage />} />            
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/terms-of-use" element={<TermsOfUse />} />
         <Route path="/dmca" element={<DmcaPage />} />
